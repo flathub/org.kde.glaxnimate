@@ -23,10 +23,10 @@ modules:
         url: https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
         sha256: be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc
         x-checker-data:
-          - type: anitya
-            project-id: 3691
-            stable-only: true
-            url-template: https://potrace.sourceforge.net/download/$version/potrace-$version.tar.gz
+          type: anitya
+          project-id: 3691
+          stable-only: true
+          url-template: https://potrace.sourceforge.net/download/$version/potrace-$version.tar.gz
   - name: glaxnimate
     buildsystem: cmake-ninja
     builddir: true
@@ -43,9 +43,9 @@ modules:
         url: https://download.kde.org/stable/glaxnimate/0.6.0/glaxnimate-0.6.0.tar.xz
         sha256: 4fe5e4d48124d499aab318c932884e3e98da2fd279399c3ba3c6a4d1e07de94a
         x-checker-data:
-          - type: anitya
-            project-id: 142485
-            stable-only: true
-            url-template: https://download.kde.org/stable/glaxnimate/$version/src/glaxnimate-$version.tar.xz
+          type: anitya
+          project-id: 142485
+          stable-only: true
+          url-template: https://download.kde.org/stable/glaxnimate/$version/glaxnimate-$version.tar.xz
       - type: patch
         path: fix-appstream-metainfo.patch
